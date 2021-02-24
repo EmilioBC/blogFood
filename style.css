@@ -1,0 +1,312 @@
+/*https://www.w3schools.com/CSS/css_list.asp*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: lightblue;
+}
+
+.nav {
+    background-color: orange;
+    max-width: 1020px;
+    margin: 0px auto;
+}
+
+.nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: 0px;
+}
+
+.nav ul li {
+    max-width: 1020px;
+    padding: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+    transition: background-color 0.5s;
+}
+
+.nav ul li:hover {
+    background-color: black;
+    color: white;
+}
+
+.image-area {
+    background-image: url(images/maxresdefault2.jpg);
+    background-position: center center;
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 70px 0px;
+
+}
+
+.image-text {
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    font-size: 2.5rem;
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 0px 16px;
+}
+
+h1 {
+    margin: auto;
+    max-width: 1020px;
+    background-color: chartreuse;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#intro {
+    margin: 0px auto;
+    max-width: 1020px;
+    background-color: burlywood;
+}
+
+#intro p {
+    margin: 0px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.italic {
+    color: red;
+}
+
+.last {
+    text-decoration: underline;
+}
+
+#ingredients {
+    max-width: 1020px;
+    margin: auto;
+}
+
+#ingredients > h2 {
+    margin: auto;
+    padding-left: 20px;
+    background-color: brown;
+    color: aliceblue;
+}
+
+#ingredients ul {
+    list-style-image: url(https://img.icons8.com/doodle/48/000000/cutting-board.png);
+    margin: auto;
+    font-size: 20px;
+    padding: 10px 70px;
+    background-color: darkseagreen;
+}
+
+#img-result {
+    text-align: center;
+    margin: auto;
+    max-width: 1020px;
+}
+
+#img-result img {
+    padding: 70px 40px;
+    width: 450px;
+    margin: auto;
+}
+
+#steps {
+    max-width: 1020px;
+    margin: auto;
+}
+
+#steps h2 {
+    color: white;
+    padding-left: 25px;
+    margin: auto;
+    background-color: brown;
+}
+
+#steps ol {
+    margin: auto;
+    padding: 0px 50px 10px;
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+#steps ol li {
+    list-style: lower-roman;
+    margin: auto;
+    padding: 5px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+img:hover {
+    background-color: black;
+    opacity: 0.5;
+    /*    https://www.w3schools.com/css/css_image_transparency.asp*/
+}
+
+#result {
+    max-width: 1020px;
+    background-color: darkseagreen;
+    margin: auto;
+}
+
+#result p {
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    font-family: cursive;
+    color: blue;
+
+}
+
+.different {
+    margin: auto;
+    max-width: 1020px;
+    background-color: coral;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.different h2 {
+    background-color: brown;
+    color: white;
+    max-width: 1020px;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.different p {
+    padding: 10px 20px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.different-list {
+    margin: auto;
+    padding: 30px 0px;
+    text-align: center;
+    background-color: aqua;
+    list-style-position: inside;
+    font-size: 20px;
+    font-weight: bolder;
+    list-style-type: upper-roman
+}
+
+.different-list p {
+    font-weight: 300;
+}
+
+.different-list img {
+    width: 300px;
+    height: 300px;
+}
+
+#footer {
+    max-width: 1020px;
+    background-color: brown;
+    position: relative;
+    height: 100px;
+    margin: auto;
+    margin-top: -100px;
+    clear: both;
+}
+
+#footer p {
+    font-size: 30px;
+    color: aliceblue;
+    padding: 40px 20px;
+}
+
+#footer img {
+    width: 30px;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+}
+
+.fourHundred {
+    background-color: hotpink;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.fourOneSevenFifty {
+    background-color: lightgrey;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.overSevenFifty {
+    background-color: yellow;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 750px) {
+
+    #img-result {
+        max-width: 1020px;
+        margin: auto;
+        padding: 0px;
+    }
+
+    #img-result img {
+        margin: auto;
+        max-width: auto;
+        float: right;
+        padding: 80px 20px;
+    }
+
+    .nav ul {
+        text-align: center;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        border-bottom: 0px;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .different-list {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    div.overSevenFifty {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    div.fourOneSevenFifty {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    div.fourOneSevenFifty {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    div.fourHundred {
+        display: none;
+    }
+
+}
